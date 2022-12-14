@@ -1,6 +1,12 @@
+
+from pathlib import Path
+
 points = 0
 
-with open('day 3/input.txt', 'r') as f:
+SCRIPT_DIR = Path(__file__).parent
+INPUT_FILE = Path(SCRIPT_DIR, "input.txt")
+
+with open(INPUT_FILE, 'r') as f:
     data = f.readlines()
     for i in range(0, len(data)):
         data[i] = data[i].replace('\n', '').strip()

@@ -1,3 +1,8 @@
+from pathlib import Path
+
+SCRIPT_DIR = Path(__file__).parent
+INPUT_FILE = Path(SCRIPT_DIR, "input.txt")
+
 
 
 def main():
@@ -28,7 +33,7 @@ def main():
     
     points = 0
     
-    with open('day 2/input.txt', 'r') as f:
+    with open(INPUT_FILE, 'r') as f:
         data = f.readlines()
         
         for set in data:

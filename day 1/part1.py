@@ -1,5 +1,10 @@
 
-with open('C:/Users/johnl/Desktop/Advent of Code/day 1/puzzle_input.txt', 'r') as f:
+from pathlib import Path
+
+SCRIPT_DIR = Path(__file__).parent
+INPUT_FILE = Path(SCRIPT_DIR, "input.txt")
+
+with open(INPUT_FILE, 'r') as f:
     data = f.readlines()
     for i in range(0, len(data)):
         data[i] = data[i].replace('\n', '').strip()
