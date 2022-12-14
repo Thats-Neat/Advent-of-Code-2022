@@ -23,6 +23,16 @@ To be an archive of my Advent of Code and to help others
 
 - [@Thats-Neat](https://github.com/Thats-Neat)
 
+
+## Installation
+
+Download project then run command below for libraries
+
+```bash
+  pip install -r requirements.txt 
+```
+
+
 ## Roadmap
 
 - None
